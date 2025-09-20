@@ -1,15 +1,15 @@
+// Smooth scroll handled by CSS (scroll-behavior: smooth)
 
-// Smooth scrolling for navigation links
-document.querySelectorAll('nav ul li a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        const targetId = this.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
-
-        window.scrollTo({
-            top: targetSection.offsetTop - 50, // Adjusts for some padding
-            behavior: 'smooth'
-        });
-    });
+// Section reveal on scroll
+const cards = document.querySelectorAll('.card');
+window.addEventListener('scroll', () => {
+  const triggerBottom = window.innerHeight * 0.85;
+  cards.forEach(card => {
+    const cardTop = card.getBoundingClientRect().top;
+    if (cardTop < triggerBottom) {
+      card.classList.add('visible');
+    }
+  });
 });
+
+
