@@ -5,77 +5,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Susrita Chatterjee - Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
+  <!-- Hero -->
   <header class="hero" id="home">
-    <img src="IMG_20250520_132554.jpg" alt="Susrita Chatterjee" class="profile-pic">
-    <h1 class="fade-in">Susrita Chatterjee</h1>
-    <p class="subtitle fade-in">Product Manager | Machine Learning Engineer | Researcher</p>
+    <div class="hero-content fade-in">
+      <img src="IMG_20250520_132554.jpg" alt="Susrita Chatterjee" class="profile-pic">
+      <h1>Susrita Chatterjee</h1>
+      <p class="subtitle">Product Manager | Machine Learning Engineer | Researcher</p>
+      <div class="hero-buttons">
+        <a href="https://drive.google.com/drive/folders/1RC_nJNCIpIhj6xcnd2ii0xvNCFnC-2eO?usp=sharing" class="btn" target="_blank">📄 Resume</a>
+        <a href="https://www.linkedin.com/in/susrita-chatterjee-423519194/" class="btn-outline" target="_blank"><i class="bx bxl-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/" class="btn-outline" target="_blank"><i class="bx bxl-github"></i> GitHub</a>
+        <a href="https://medium.com/@susritachatterjee2018" class="btn-outline" target="_blank"><i class="bx bxl-medium"></i> Medium</a>
+      </div>
+    </div>
     <nav>
       <ul>
         <li><a href="#education">Education</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#leadership">Leadership</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <a href="https://drive.google.com/drive/folders/1RC_nJNCIpIhj6xcnd2ii0xvNCFnC-2eO?usp=sharing" class="btn" target="_blank">Download Resume</a>
   </header>
 
   <!-- Education -->
   <section id="education" class="card slide-up">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Saint Mary's University</strong> — M.Sc. in Computer Science (GPA: 4.15/4.3)<br>
-      Durland Scholarship, Mitacs Graduate Fellowship</li>
-      <li><strong>RCC Institute of Information Technology</strong> — B.Tech in Electronics & Communication Engineering (GPA: 9.27/10)</li>
-    </ul>
+    <h2><i class="bx bxs-graduation"></i> Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Saint Mary's University</h3>
+        <span>M.Sc. Computer Science | GPA 4.15/4.3</span>
+        <p>Durland Scholarship, Mitacs Graduate Fellowship</p>
+      </div>
+      <div class="timeline-item">
+        <h3>RCC Institute of Information Technology</h3>
+        <span>B.Tech Electronics & Communication | GPA 9.27/10</span>
+      </div>
+    </div>
   </section>
 
   <!-- Experience -->
   <section id="experience" class="card slide-up">
-    <h2>Experience</h2>
-    <div class="job">
-      <h3>Data Engineer — RBC (Amplify 2025)</h3>
-      <p>Developed a surveillance enhancement system for investment advisors. Integrated AI assistant & ML alerts to streamline trade monitoring.</p>
-    </div>
-    <div class="job">
-      <h3>ML Engineer — Modest Tree (Mitacs Fellowship)</h3>
-      <p>Improved boat detection precision by 10% with YOLOv8/YOLOv10 + RL framework. Created AlignDET for instance & box retraining.</p>
-    </div>
-    <div class="job">
-      <h3>Consumer Psychology Researcher — Sobey's Business School</h3>
-      <p>Studied generative AI avatar marketing strategies, contributing to ethical AI adoption in business campaigns.</p>
-    </div>
-    <div class="job">
-      <h3>Graduate Researcher — Saint Mary's University</h3>
-      <p>Developed U-Net model for satellite streak detection (94% accuracy) and a road maintenance system via satellite imagery.</p>
+    <h2><i class="bx bxs-briefcase"></i> Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Data Engineer — RBC Amplify</h3>
+        <span>May – Aug 2025</span>
+        <p>Developed AI-driven surveillance system to reduce advisor workload by 30%, integrating ML alerts and conversation management.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Machine Learning Engineer — Modest Tree</h3>
+        <span>2023 – 2025</span>
+        <p>Improved boat detection accuracy by 10% with YOLOv8/10 + RL. Built AlignDET for retraining at box + instance level.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Consumer Psychology Researcher — Sobey’s Business School</h3>
+        <span>2023 – 2024</span>
+        <p>Analyzed avatar-based AI marketing. Contributed to ethical AI adoption in consumer engagement strategies.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Graduate Researcher — Saint Mary's University</h3>
+        <span>2023 – 2025</span>
+        <p>Built U-Net model for satellite streak detection (94% accuracy). Designed road maintenance system via satellite imagery.</p>
+      </div>
     </div>
   </section>
 
   <!-- Projects -->
   <section id="projects" class="card slide-up">
-    <h2>Projects</h2>
+    <h2><i class="bx bxs-flask"></i> Projects</h2>
     <ul>
       <li><strong>Road Maintenance Scheduling</strong> — Reinforcement Learning + Satellite Imagery</li>
-      <li><strong>Graph Convolution-based Activity Closeness Estimation</strong> — Human pose estimation & GNNs</li>
+      <li><strong>Graph Convolution Activity Closeness</strong> — Human Pose Estimation + GNN</li>
+      <li><strong>AlignDET Framework</strong> — Retraining object detection with instance-level precision</li>
     </ul>
   </section>
 
   <!-- Skills -->
   <section id="skills" class="card slide-up">
-    <h2>Skills</h2>
-    <p><strong>Programming:</strong> Python, C++, JavaScript, MATLAB, SQL</p>
-    <p><strong>Frameworks:</strong> PyTorch, TensorFlow, Keras</p>
-    <p><strong>Tools:</strong> Git, Jenkins, WordPress, Linux, Figma</p>
-    <p><strong>Product Management:</strong> Agile, UX Research, Google Analytics</p>
+    <h2><i class="bx bx-code-alt"></i> Skills</h2>
+    <div class="skills-grid">
+      <div><strong>Languages:</strong> Python, C++, JavaScript, MATLAB, SQL</div>
+      <div><strong>Frameworks:</strong> PyTorch, TensorFlow, Keras</div>
+      <div><strong>PM Tools:</strong> Agile, UX Research, Google Analytics, Figma</div>
+      <div><strong>Tech:</strong> ML, Computer Vision, Deep Learning, Reinforcement Learning</div>
+    </div>
+  </section>
+
+  <!-- Leadership -->
+  <section id="leadership" class="card slide-up">
+    <h2><i class="bx bx-group"></i> Leadership & Awards</h2>
+    <ul>
+      <li>Student Leader, SMU Residence Life — Led 30+ wellness workshops</li>
+      <li>Grace Hopper Student Scholar</li>
+      <li>Linux Foundation Award</li>
+      <li>Wicked Challenge Award — Housing crisis solution</li>
+      <li>Mitacs Mentor — Guided 15 interns worldwide</li>
+    </ul>
   </section>
 
   <!-- Contact -->
   <section id="contact" class="card slide-up">
-    <h2>Contact</h2>
+    <h2><i class="bx bx-envelope"></i> Contact</h2>
     <p>Email: <a href="mailto:susritachatterjee2018@gmail.com">susritachatterjee2018@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/susrita-chatterjee-423519194/" target="_blank">linkedin.com/in/susrita-chatterjee</a></p>
     <p>GitHub: <a href="https://github.com/" target="_blank">github.com</a></p>
@@ -90,4 +126,3 @@
 </body>
 </html>
 
-      
