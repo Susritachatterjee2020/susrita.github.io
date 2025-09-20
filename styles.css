@@ -23,7 +23,7 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: linear-gradient(60deg, #6c5ce7, #0984e3, #00b894);
+  background: linear-gradient(60deg, #6c5ce7, #0984e3, #00b894, #fd79a8);
   animation: rotateGradient 5s linear infinite;
   z-index: 0;
   opacity: 0.15;
@@ -62,6 +62,7 @@
 /* Specific highlight colors */
 .highlight-item.vida { border-color: #6c5ce7; }
 .highlight-item.medium { border-color: #00b894; }
+.highlight-item.satstreaks { border-color: #fd79a8; }
 
 .highlight-item ul {
   padding-left: 20px;
