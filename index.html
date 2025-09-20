@@ -1,96 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Susrita Chatterjee - Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Susrita Chatterjee - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Susrita Chatterjee</h1>
-        <p>Machine Learning Engineer | Researcher | Graduate Student</p>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header class="hero" id="home">
+    <img src="IMG_20250520_132554.jpg" alt="Susrita Chatterjee" class="profile-pic">
+    <h1 class="fade-in">Susrita Chatterjee</h1>
+    <p class="subtitle fade-in">Product Manager | Machine Learning Engineer | Researcher</p>
+    <nav>
+      <ul>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="Susrita_Chatterjee_Resume_Canada.pdf" class="btn" target="_blank">Download Resume</a>
+  </header>
 
-    <section id="home">
-        <h2>Welcome!</h2>
-        <p>I am Susrita Chatterjee, currently pursuing my Master's degree in Applied Science at Saint Mary's University. I specialize in machine learning, image processing, and deep learning. Explore my site to learn more about my education, work experience, projects, and skills.</p>
-    </section>
+  <!-- Education -->
+  <section id="education" class="card slide-up">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Saint Mary's University</strong> — M.Sc. in Computer Science (GPA: 4.15/4.3)<br>
+      Durland Scholarship, Mitacs Graduate Fellowship</li>
+      <li><strong>RCC Institute of Information Technology</strong> — B.Tech in Electronics & Communication Engineering (GPA: 9.27/10)</li>
+    </ul>
+  </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Saint Mary's University</strong> (Master's in Applied Science in Mathematics & Computer Science) - GPA: 4.15/4.3 <br>Sept. 2025 – Aug. 2025</li>
-            <li><strong>RCC Institute of Information Technology</strong> (Bachelor in Electronics & Communication Engineering) - GPA: 9.27/10 <br>June 2019 – June 2023</li>
-        </ul>
-    </section>
+  <!-- Experience -->
+  <section id="experience" class="card slide-up">
+    <h2>Experience</h2>
+    <div class="job">
+      <h3>Data Engineer — RBC (Amplify 2025)</h3>
+      <p>Developed a surveillance enhancement system for investment advisors. Integrated AI assistant & ML alerts to streamline trade monitoring.</p>
+    </div>
+    <div class="job">
+      <h3>ML Engineer — Modest Tree (Mitacs Fellowship)</h3>
+      <p>Improved boat detection precision by 10% with YOLOv8/YOLOv10 + RL framework. Created AlignDET for instance & box retraining.</p>
+    </div>
+    <div class="job">
+      <h3>Consumer Psychology Researcher — Sobey's Business School</h3>
+      <p>Studied generative AI avatar marketing strategies, contributing to ethical AI adoption in business campaigns.</p>
+    </div>
+    <div class="job">
+      <h3>Graduate Researcher — Saint Mary's University</h3>
+      <p>Developed U-Net model for satellite streak detection (94% accuracy) and a road maintenance system via satellite imagery.</p>
+    </div>
+  </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li><strong>Machine Learning Engineer</strong> - Modest Tree (Mitacs Accelerate Fellowship) <br>
-                <p>Developed a reinforcement learning framework over YOLOv8 and YOLOv10 to enhance boat detection accuracy, achieving a 10% increase in precision. Introduced the AlignDET framework for retraining object detection models, optimizing both box and instance-level accuracy.</p>
-            </li>
-            <li><strong>Consumer Psychology Researcher</strong> - Sobey's School of Business, SMU <br>
-                <p>Analyzed consumer responses to avatar-based marketing campaigns, focusing on generative AI policies. Provided insights for ethical marketing strategies, contributing to innovative business models.</p>
-            </li>
-            <li><strong>Machine Learning Researcher</strong> - Saint Mary's University <br>
-                <p>Developed an enhanced U-Net model for satellite streak detection with 94% accuracy and created a road maintenance application using binary road imagery for predictive insights on repair needs.</p>
-            </li>
-        </ul>
-    </section>
+  <!-- Projects -->
+  <section id="projects" class="card slide-up">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Road Maintenance Scheduling</strong> — Reinforcement Learning + Satellite Imagery</li>
+      <li><strong>Graph Convolution-based Activity Closeness Estimation</strong> — Human pose estimation & GNNs</li>
+    </ul>
+  </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <strong>Road Maintenance Scheduling with Reinforcement Learning</strong> <br>
-                <p>Developed a web-based application aimed at improving road maintenance processes by leveraging satellite imagery. Introduced a novel circular patch-based sliding window algorithm to segment roads and assess maintenance needs. Integrated predictions on satellite-based binary road imagery, focusing on detecting areas requiring minor or major repairs. Devised a new algorithm for intersection point analysis based on QGIS software.</p>
-            </li>
-            <li>
-                <strong>Graph Convolution-based Activity Closeness Estimation</strong> <br>
-                <p>Introduced a methodology integrating human pose estimation, dynamic graph representations, and Graph Neural Networks (GNNs) to enhance video comparison techniques. This project combined Python and GCN frameworks for a comprehensive activity analysis approach.</p>
-            </li>
-        </ul>
-    </section>
+  <!-- Skills -->
+  <section id="skills" class="card slide-up">
+    <h2>Skills</h2>
+    <p><strong>Programming:</strong> Python, C++, JavaScript, MATLAB, SQL</p>
+    <p><strong>Frameworks:</strong> PyTorch, TensorFlow, Keras</p>
+    <p><strong>Tools:</strong> Git, Jenkins, WordPress, Linux, Figma</p>
+    <p><strong>Product Management:</strong> Agile, UX Research, Google Analytics</p>
+  </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Programming Languages:</strong> Python, JavaScript, C++, MATLAB (Basic), SQL</li>
-            <li><strong>Frameworks:</strong> PyTorch, TensorFlow, Keras</li>
-            <li><strong>Tools:</strong> Git, Jenkins, WordPress, Linux</li>
-        </ul>
-    </section>
+  <!-- Contact -->
+  <section id="contact" class="card slide-up">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:susritachatterjee2018@gmail.com">susritachatterjee2018@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/susrita-chatterjee-423519194/" target="_blank">linkedin.com/in/susrita-chatterjee</a></p>
+    <p>GitHub: <a href="https://github.com/" target="_blank">github.com</a></p>
+    <p>Medium: <a href="https://medium.com/@susritachatterjee2018" target="_blank">medium.com/@susritachatterjee2018</a></p>
+  </section>
 
-    <section id="blog">
-        <h2>My Blog</h2>
-        <p>Read my latest insights on machine learning and technology on <a href="https://medium.com/@susritachatterjee2018" target="_blank">Medium</a>.</p>
-    </section>
+  <footer>
+    <p>&copy; 2025 Susrita Chatterjee | Built with ❤ on GitHub Pages</p>
+  </footer>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:susritachatterjee2018@gmail.com">susritachatterjee2018@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/susrita-chatterjee-423519194/" target="_blank">linkedin.com/in/susrita-chatterjee</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Susrita Chatterjee. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
 
-
-        
+      
