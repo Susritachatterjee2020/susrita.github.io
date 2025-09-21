@@ -15,11 +15,9 @@ function revealOnScroll() {
   });
 }
 
-// Trigger on scroll
 window.addEventListener('scroll', revealOnScroll);
-
-// Trigger on page load
 window.addEventListener('load', revealOnScroll);
+
 
 
 
