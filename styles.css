@@ -1,24 +1,33 @@
-*{margin:0;padding:0;box-sizing:border-box;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
 body{
 font-family:Arial, sans-serif;
-background:linear-gradient(180deg,#f6f8ff,#ffffff);
+background:linear-gradient(180deg,#f7f8ff,#ffffff);
 color:#333;
 line-height:1.6;
 }
+
+
+/* NAVBAR */
 
 .navbar{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 20px;
+padding:16px 25px;
 background:white;
 position:sticky;
 top:0;
 box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
-.logo{font-weight:bold;}
+.logo{
+font-weight:bold;
+}
 
 .nav-links{
 display:flex;
@@ -32,29 +41,40 @@ color:#333;
 font-weight:600;
 }
 
-.menu-toggle{display:none;font-size:28px;cursor:pointer;}
+.menu-toggle{
+display:none;
+font-size:26px;
+cursor:pointer;
+}
+
+
+
+/* HERO */
 
 .hero{
 text-align:center;
-padding:100px 20px 70px;
+padding:110px 20px 70px;
 background:
 radial-gradient(circle at 20% 20%,#e9ecff,transparent),
 radial-gradient(circle at 80% 40%,#e7f0ff,transparent),
 #f7f8ff;
 }
 
-.hero h1{font-size:clamp(2rem,5vw,3rem);}
+.hero h1{
+font-size:clamp(2rem,5vw,3rem);
+}
 
 .subtitle{
 max-width:700px;
 margin:auto;
+margin-top:10px;
 color:#555;
 }
 
 .hero-buttons{
 display:flex;
-gap:12px;
 justify-content:center;
+gap:12px;
 margin-top:25px;
 flex-wrap:wrap;
 }
@@ -67,6 +87,10 @@ color:#6c5ce7;
 text-decoration:none;
 }
 
+
+
+/* SECTIONS */
+
 section{
 max-width:1100px;
 margin:80px auto;
@@ -76,40 +100,88 @@ padding:30px;
 .card{
 background:white;
 border-radius:12px;
-padding:30px;
 box-shadow:0 8px 25px rgba(0,0,0,0.05);
 }
 
 section h2{
-margin-bottom:20px;
+margin-bottom:25px;
 background:linear-gradient(90deg,#6c5ce7,#74b9ff);
 -webkit-background-clip:text;
 color:transparent;
 }
 
-.timeline{padding-left:30px;position:relative;}
 
-.timeline::before{
+
+/* EDUCATION */
+
+.edu-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.edu-item ul{
+margin-top:10px;
+padding-left:18px;
+}
+
+
+
+/* CAREER TRACK */
+
+.career-track{
+position:relative;
+padding-left:40px;
+}
+
+.career-track::before{
 content:"";
 position:absolute;
-left:5px;
+left:12px;
 top:0;
 bottom:0;
-width:3px;
+width:4px;
 background:linear-gradient(#6c5ce7,#74b9ff);
 }
 
-.timeline-item{margin-bottom:25px;}
+.track-item{
+position:relative;
+margin-bottom:40px;
+}
+
+.track-dot{
+position:absolute;
+left:-1px;
+top:10px;
+width:18px;
+height:18px;
+background:#6c5ce7;
+border-radius:50%;
+}
+
+.track-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+margin-left:25px;
+}
+
+
+
+/* SKILLS */
 
 .skills span{
 display:inline-block;
 padding:8px 14px;
 margin:6px;
-background:#f1f3ff;
+background:#eef1ff;
 border-radius:20px;
 }
 
-footer{text-align:center;padding:40px;color:#777;}
+
+
+/* MOBILE */
 
 @media(max-width:768px){
 
@@ -128,10 +200,8 @@ padding:20px;
 
 .nav-links.active{display:flex;}
 
-.hero-buttons{
-flex-direction:column;
-max-width:260px;
-margin:auto;
+.edu-grid{
+grid-template-columns:1fr;
 }
 
 }
