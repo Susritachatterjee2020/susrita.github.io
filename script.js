@@ -1,41 +1,48 @@
-const cards = document.querySelectorAll('.card');
-const highlightCards = document.querySelectorAll('.highlight-item');
+// MOBILE NAV
 
-function revealOnScroll() {
-  const triggerBottom = window.innerHeight * 0.85;
+const toggle = document.querySelector(".menu-toggle")
+const nav = document.querySelector(".nav-links")
 
-  cards.forEach(card => {
-    const cardTop = card.getBoundingClientRect().top;
-    if (cardTop < triggerBottom) card.classList.add('visible');
-  });
+toggle.addEventListener("click",()=>{
 
-  highlightCards.forEach(card => {
-    const cardTop = card.getBoundingClientRect().top;
-    if (cardTop < triggerBottom) card.classList.add('visible');
-  });
-}
+nav.classList.toggle("active")
 
-// Dropdown logic for What / Why / How
-const expButtons = document.querySelectorAll('.exp-btn');
-expButtons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const content = btn.nextElementSibling;
-    content.classList.toggle('show');
-    btn.classList.toggle('active');
-  });
-});
-
-window.addEventListener('scroll', revealOnScroll);
-window.addEventListener('load', revealOnScroll);
+})
 
 
 
+// SMOOTH SCROLL
+
+document.querySelectorAll(".nav-links a").forEach(link=>{
+
+link.addEventListener("click",function(e){
+
+e.preventDefault()
+
+const target=document.querySelector(this.getAttribute("href"))
+
+target.scrollIntoView({
+behavior:"smooth"
+})
+
+})
+
+})
 
 
 
+// EXPERIENCE DROPDOWN
 
+const expButtons=document.querySelectorAll(".exp-btn")
 
+expButtons.forEach(btn=>{
 
+btn.addEventListener("click",()=>{
 
+const content=btn.nextElementSibling
 
+content.classList.toggle("show")
 
+})
+
+})
