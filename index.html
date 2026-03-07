@@ -1,183 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Susrita Chatterjee - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Susrita Chatterjee | Portfolio</title>
+
+<link rel="stylesheet" href="styles.css">
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
 </head>
+
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#teaching">Teaching</a></li>
-      
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#leadership">Leadership</a></li>
-      <li><a href="#highlights">Highlights</a></li>
-      
-    </ul>
-  </nav>
+<!-- NAVBAR -->
 
-  <!-- Hero Section -->
-  <header class="hero" id="home">
-    <h1>Susrita Chatterjee</h1>
-    <p class="subtitle">Data Engineer | Machine Learning Engineer | Computer Vision Researcher | Consumer Researcher | Product Management</p>
-    <div class="hero-buttons">
-      <a href="https://drive.google.com/drive/folders/1RC_nJNCIpIhj6xcnd2ii0xvNCFnC-2eO?usp=sharing" class="btn" target="_blank">📄 Resume</a>
-      <a href="https://www.linkedin.com/in/susrita-chatterjee-423519194/" class="btn-outline" target="_blank"><i class="bx bxl-linkedin"></i> LinkedIn</a>
-      <a href="https://github.com/" class="btn-outline" target="_blank"><i class="bx bxl-github"></i> GitHub</a>
-      <a href="https://medium.com/@susritachatterjee2018" class="btn-outline" target="_blank"><i class="bx bxl-medium"></i> Medium</a>
-    </div>
-  </header>
+<nav class="navbar">
 
-  <!-- Education -->
-  <section id="education" class="card slide-up">
-    <h2><i class="bx bxs-graduation"></i> Education</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>Saint Mary's University</h3>
-        <span>M.Sc. Computer Science | GPA 4.15/4.3</span>
-        <p>Durland Scholarship, Mitacs Graduate Fellowship, Mitacs Accelerate Fellowship, FGSR Travel Award</p>
-      </div>
-      <div class="timeline-item">
-        <h3>RCC Institute of Information Technology</h3>
-        <span>B.Tech Electronics & Communication | GPA 9.27/10</span>
-        <p>Outstanding Achievement Award 2022 & 2023, Best Communication Officer Award for Tech Club of the University. Mitacs Globalink Internship Award </p>
-      </div>
-    </div>
-  </section>
+<div class="logo">Susrita</div>
 
-  <!-- Experience -->
-  <section id="experience" class="card slide-up">
-    <h2><i class="bx bxs-briefcase"></i> Experience</h2>
-    <div class="timeline">
+<div class="menu-toggle">
+<i class='bx bx-menu'></i>
+</div>
 
-      <!-- RBC Amplify with What/Why/How dropdown -->
-      <div class="timeline-item">
-        <h3>Data Engineer — RBC Amplify</h3>
-        <span>May – Aug 2025 | Halifax, NS</span>
-        <div class="experience-dropdown">
-          <button class="exp-btn">What?</button>
-          <div class="exp-content">
-            Streamlined trade alert workflow for 200+ Branch Directors by consolidating data from 7+ systems, integrated ML model & automated RFI templates, designed UI dashboards, and collaborated in a cross-functional team of 4.
-          </div>
-          <button class="exp-btn">Why?</button>
-          <div class="exp-content">
-            To reduce advisor workload, improve compliance efficiency, and create a centralized platform for tracking trade alerts and RFIs.
-          </div>
-          <button class="exp-btn">How?</button>
-          <div class="exp-content">
-            Built ETL pipelines, designed storage solutions, integrated ML workflow, supported UI/UX development, conducted user testing, and iteratively refined features based on stakeholder feedback.
-          </div>
-        </div>
-      </div>
+<ul class="nav-links">
 
-      <div class="timeline-item">
-        <h3>Machine Learning Engineer — Modest Tree</h3>
-        <span>2023 – 2025</span>
-        <p>Improved boat detection accuracy by 10% using YOLOv8/10 + RL. Built AlignDET framework for precise object detection. Defined project roadmap and coordinated deployment with engineers.</p>
-      </div>
+<li><a href="#home">Home</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#teaching">Teaching</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#leadership">Leadership</a></li>
+<li><a href="#highlights">Highlights</a></li>
 
-      <div class="timeline-item">
-        <h3>Consumer Psychology Researcher — Sobey’s Business School</h3>
-        <span>2023 – 2024</span>
-        <p>Analyzed avatar-based AI marketing and contributed actionable insights for ethical AI adoption. Collaborated cross-functionally and measured engagement improvements.</p>
-      </div>
+</ul>
 
-      <div class="timeline-item">
-        <h3>Graduate Researcher — Saint Mary's University</h3>
-        <span>2023 – 2025</span>
-        <p>Built U-Net model for satellite streak detection (94% accuracy) and designed a road maintenance system using RL. Defined KPIs and evaluated impact metrics in collaboration with peers and city planners.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Teaching Experience -->
-  <section id="teaching" class="card slide-up">
-    <h2><i class="bx bx-chalkboard"></i> Teaching & Mentorship Experience</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>Teaching Assistant (Security Systems) — Saint Mary's University</h3>
-        <span>Jan 2025 – Apr 2025 | Halifax, NS</span>
-        <p>Supported students with labs, assignments, and course materials in Security Systems.</p>
-      </div>
-
-      <div class="timeline-item">
-        <h3>Teaching Assistant (Cryptography) — Saint Mary's University</h3>
-        <span>Sep 2024 – Dec 2024 | Halifax, NS</span>
-        <p>Guided students in encryption concepts, graded assignments & exams, and facilitated labs.</p>
-      </div>
-
-      <div class="timeline-item">
-        <h3>Teaching Assistant (Operating Systems) — Saint Mary's University</h3>
-        <span>Jan 2024 – Apr 2024 | Halifax, NS</span>
-        <p>Mentored students on HPC, documentation, and practical exercises.</p>
-      </div>
-
-      <div class="timeline-item">
-        <h3>Teaching Assistant (Multimedia & Computing) — Saint Mary's University</h3>
-        <span>Sep 2023 – Dec 2023 | Halifax, NS</span>
-        <p>Marked assignments, created tutorials, guided students. Skills: Coaching, HPC, Video/Image Processing, Python, Problem Solving, Written Communication, Student Engagement.</p>
-      </div>
-    </div>
-  </section>
+</nav>
 
 
+<!-- HERO -->
 
-  <!-- Skills -->
-  <section id="skills" class="card slide-up">
-    <h2><i class="bx bx-code-alt"></i> Skills</h2>
-    <div class="skills-grid">
-      <div><strong>Technical:</strong> Python, C++, JavaScript, MATLAB, SQL, PyTorch, TensorFlow, Keras, ML, Computer Vision, Deep Learning, Reinforcement Learning</div>
-      <div><strong>Product / PM:</strong> Roadmap Planning, UX Research, Data-driven Decision Making, Agile, Stakeholder Communication, Feature Prioritization, Impact Evaluation</div>
-    </div>
-  </section>
+<header class="hero" id="home">
 
-  <!-- Leadership -->
-  <section id="leadership" class="card slide-up">
-    <h2><i class="bx bx-group"></i> Leadership & Awards</h2>
-    <ul>
-      <li>Student Leader, SMU Residence Life — Led 30+ wellness workshops</li>
-      <li>Grace Hopper Student Scholar 2022</li>
-      <li>Linux Foundation Scholarship (Women in Open Source)</li>
-      <li>Wicked Challenge Award — VIDA Living Housing crisis solution</li>
-      <li>Mitacs Mentor (Twice) — Guided 15+ interns, organized events to enhance summer internship experience</li>
-    </ul>
-  </section>
+<h1>Susrita Chatterjee</h1>
 
-  <!-- Highlights -->
-  <section id="highlights" class="card slide-up">
-    <h2><i class="bx bxs-star"></i> Featured Highlights</h2>
-    <div class="highlights-grid">
-      <div class="highlight-item vida">
-        <h3>VIDA Living Feature</h3>
-        <p>Winner of housing innovation challenge, designed gamified AI onboarding platform for VIDA Living.</p>
-        <a href="https://www.vidaliving.ca/news/news-housing-crisis-student-innovations-affordable-living" target="_blank">Read More</a>
-      </div>
-      <div class="highlight-item medium">
-        <h3>Medium Articles</h3>
-        <ul>
-          <li><a href="https://medium.com/@susritachatterjee2018/cracking-the-mitacs-globalink-research-internship" target="_blank">Cracking the Mitacs Globalink Research Internship</a></li>
-          <li><a href="https://medium.com/@susritachatterjee2018/attending-the-grace-hopper-conference-2021" target="_blank">Attending the Grace Hopper Conference 2021</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
+<p class="subtitle">
+Data Engineer • Machine Learning Engineer • Computer Vision Researcher • Product Thinking
+</p>
+
+<div class="hero-buttons">
+
+<a href="https://drive.google.com/drive/folders/1RC_nJNCIpIhj6xcnd2ii0xvNCFnC-2eO?usp=sharing" target="_blank" class="btn">
+Resume
+</a>
+
+<a href="https://www.linkedin.com/in/susrita-chatterjee-423519194/" target="_blank" class="btn-outline">
+<i class="bx bxl-linkedin"></i> LinkedIn
+</a>
+
+<a href="https://github.com/" target="_blank" class="btn-outline">
+<i class="bx bxl-github"></i> GitHub
+</a>
+
+<a href="https://medium.com/@susritachatterjee2018" target="_blank" class="btn-outline">
+<i class="bx bxl-medium"></i> Medium
+</a>
+
+</div>
+
+</header>
 
 
+<!-- EDUCATION -->
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Susrita Chatterjee | Built with ❤ on GitHub Pages</p>
-  </footer>
+<section id="education" class="card">
 
-  <script src="script.js"></script>
+<h2>Education</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h3>Saint Mary's University</h3>
+<span>M.Sc Computer Science • GPA 4.15 / 4.3</span>
+
+<p>
+Durland Scholarship, Mitacs Graduate Fellowship, Mitacs Accelerate Fellowship
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<h3>RCC Institute of Information Technology</h3>
+<span>B.Tech Electronics & Communication • GPA 9.27 / 10</span>
+
+<p>
+Outstanding Achievement Award, Mitacs Globalink Internship Award
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section id="experience" class="card">
+
+<h2>Professional Experience</h2>
+
+<div class="timeline">
+
+
+<div class="timeline-item">
+
+<h3>Data Engineer — RBC Amplify</h3>
+
+<span>May 2025 – Aug 2025 • Halifax</span>
+
+<div class="experience-dropdown">
+
+<button class="exp-btn">What did I build?</button>
+
+<div class="exp-content">
+
+Developed a surveillance workflow platform for 200+ branch directors by integrating data from multiple financial systems.
+
+</div>
+
+
+<button class="exp-btn">Why?</button>
+
+<div class="exp-content">
+
+To reduce advisor workload and streamline alert investigation by consolidating systems into one intelligent workflow.
+
+</div>
+
+
+<button class="exp-btn">How?</button>
+
+<div class="exp-content">
+
+Designed ETL pipelines, integrated ML recommendations for RFIs, and collaborated with product designers to build dashboards.
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="timeline-item">
+
+<h3>Machine Learning Engineer — Modest Tree</h3>
+
+<span>2023 – 2025</span>
+
+<p>
+Improved boat detection accuracy by 10% using YOLOv8 + reinforcement learning.
+Developed AlignDET framework for enhanced object detection training.
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<h3>Consumer Psychology Researcher — Sobey's Business School</h3>
+
+<span>2023 – 2024</span>
+
+<p>
+Researched consumer responses to AI-generated avatars in marketing and contributed insights for ethical AI policy adoption.
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<h3>Machine Learning Researcher — Saint Mary's University</h3>
+
+<span>2023 – 2025</span>
+
+<p>
+Built a U-Net model achieving 94% accuracy for satellite streak detection and developed reinforcement learning based road maintenance prediction.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- TEACHING -->
+
+<section id="teaching" class="card">
+
+<h2>Teaching & Mentorship</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>Teaching Assistant — Security Systems</h3>
+<span>Jan 2025 – Apr 2025</span>
+</div>
+
+<div class="timeline-item">
+<h3>Teaching Assistant — Cryptography</h3>
+<span>Sep 2024 – Dec 2024</span>
+</div>
+
+<div class="timeline-item">
+<h3>Teaching Assistant — Operating Systems</h3>
+<span>Jan 2024 – Apr 2024</span>
+</div>
+
+<div class="timeline-item">
+<h3>Teaching Assistant — Multimedia Computing</h3>
+<span>Sep 2023 – Dec 2023</span>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- SKILLS -->
+
+<section id="skills" class="card">
+
+<h2>Technical Skills</h2>
+
+<div class="skills">
+
+<span>Python</span>
+<span>C++</span>
+<span>SQL</span>
+<span>PyTorch</span>
+<span>TensorFlow</span>
+<span>Machine Learning</span>
+<span>Computer Vision</span>
+<span>Deep Learning</span>
+<span>Reinforcement Learning</span>
+<span>LLMs</span>
+
+</div>
+
+</section>
+
+
+
+<!-- LEADERSHIP -->
+
+<section id="leadership" class="card">
+
+<h2>Leadership & Awards</h2>
+
+<ul>
+
+<li>Student Leader – SMU Residence Life</li>
+<li>Grace Hopper Student Scholar</li>
+<li>Linux Foundation Scholarship – Women in Open Source</li>
+<li>Wicked Challenge Winner – Housing Innovation</li>
+<li>Mitacs Mentor – Guided 15+ global interns</li>
+
+</ul>
+
+</section>
+
+
+
+<!-- HIGHLIGHTS -->
+
+<section id="highlights" class="card">
+
+<h2>Highlights</h2>
+
+<div class="highlights-grid">
+
+<div class="highlight-item">
+
+<h3>VIDA Living Innovation</h3>
+
+<p>
+Winner of housing innovation challenge creating AI onboarding solution.
+</p>
+
+<a href="https://www.vidaliving.ca/news/news-housing-crisis-student-innovations-affordable-living" target="_blank">
+Read more
+</a>
+
+</div>
+
+
+<div class="highlight-item">
+
+<h3>Medium Articles</h3>
+
+<ul>
+
+<li>
+<a href="https://medium.com/@susritachatterjee2018/cracking-the-mitacs-globalink-research-internship">
+Cracking the Mitacs Globalink Research Internship
+</a>
+</li>
+
+<li>
+<a href="https://medium.com/@susritachatterjee2018/attending-the-grace-hopper-conference-2021">
+Grace Hopper Experience
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<p>© 2025 Susrita Chatterjee • Built with GitHub Pages</p>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
