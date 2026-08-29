@@ -155,11 +155,11 @@ main,
 
 .hero {
   margin: 1.2rem auto 0;
-  padding: 3rem 0 1rem;
+  padding: 2.4rem 0 1rem;
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
-  gap: 1.5rem;
-  align-items: stretch;
+  gap: 1.8rem;
+  align-items: start;
   position: relative;
 }
 
@@ -169,14 +169,14 @@ main,
 }
 
 .hero-copy {
-  padding: 2rem 0.5rem 2rem 0;
+  padding: 1.2rem 0.5rem 1.6rem 0;
 }
 
 .hero-art {
   position: relative;
   width: min(22rem, 100%);
   height: 10.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.1rem;
 }
 
 .hero-art-card {
@@ -208,7 +208,7 @@ main,
   display: block;
   margin-top: 0.45rem;
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.45rem;
+  font-size: 1.28rem;
   font-weight: 700;
 }
 
@@ -301,7 +301,7 @@ main,
 
 .hero-text {
   max-width: 58ch;
-  margin-top: 1.25rem;
+  margin-top: 1rem;
   font-size: 1rem;
   color: var(--muted);
 }
@@ -310,7 +310,7 @@ main,
   display: flex;
   flex-wrap: wrap;
   gap: 0.9rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .btn {
@@ -341,6 +341,7 @@ main,
 .hero-panel {
   display: grid;
   gap: 1rem;
+  align-content: start;
 }
 
 .panel-card,
@@ -354,56 +355,6 @@ main,
 .panel-card {
   border-radius: 2rem;
   padding: 1.5rem;
-}
-
-.illustration-card {
-  position: relative;
-  min-height: 250px;
-  overflow: hidden;
-  background:
-    radial-gradient(circle at 25% 30%, rgba(255, 255, 255, 0.95), transparent 20%),
-    linear-gradient(135deg, rgba(15, 118, 110, 0.12), rgba(226, 135, 67, 0.16));
-}
-
-.orbit {
-  position: absolute;
-  border-radius: 999px;
-  border: 1px solid rgba(11, 79, 87, 0.14);
-}
-
-.orbit-one {
-  inset: 1.2rem 3.2rem auto 1.2rem;
-  height: 120px;
-}
-
-.orbit-two {
-  inset: auto 1.2rem 1.2rem 4.5rem;
-  height: 105px;
-}
-
-.signal-card {
-  position: absolute;
-  inset: 1.4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 0.75rem;
-}
-
-.signal-card span {
-  width: fit-content;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-  padding: 0.6rem 0.9rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.82);
-  border: 1px solid rgba(15, 118, 110, 0.12);
-  font-weight: 700;
-}
-
-.signal-card i {
-  color: var(--primary);
 }
 
 .impact-stack {
@@ -432,6 +383,12 @@ main,
   color: var(--muted);
 }
 
+.mentor-snapshot p:last-child {
+  margin-top: 0.55rem;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
 main {
   padding-bottom: 4rem;
 }
@@ -450,7 +407,8 @@ main {
 }
 
 .story-section,
-.two-column {
+.two-column,
+.testimonials-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.3rem;
@@ -607,6 +565,53 @@ main {
   font-size: 0.97rem;
 }
 
+.testimonial-card,
+.mentor-card {
+  position: relative;
+}
+
+.testimonial-card {
+  background:
+    linear-gradient(135deg, rgba(248, 255, 252, 0.98), rgba(240, 248, 245, 0.94)),
+    radial-gradient(circle at top right, rgba(15, 118, 110, 0.12), transparent 30%);
+}
+
+.quote-mark {
+  width: 3rem;
+  height: 3rem;
+  display: inline-grid;
+  place-items: center;
+  margin-bottom: 0.9rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, rgba(15, 118, 110, 0.14), rgba(226, 135, 67, 0.18));
+  color: var(--primary);
+  font-size: 1.25rem;
+}
+
+.testimonial-text {
+  font-size: 0.98rem;
+  color: var(--text);
+}
+
+.testimonial-text + .testimonial-text {
+  margin-top: 0.9rem;
+}
+
+.testimonial-attribution {
+  margin-top: 1.1rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.mentor-card h3 {
+  margin-top: 0.45rem;
+  margin-bottom: 0.9rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.35rem;
+}
+
 .contact-card {
   text-align: center;
   padding: 2.2rem;
@@ -670,6 +675,7 @@ main {
   .hero,
   .story-section,
   .two-column,
+  .testimonials-grid,
   .focus-grid,
   .experience-grid {
     grid-template-columns: 1fr;
@@ -732,12 +738,8 @@ main {
     margin-bottom: 1.1rem;
   }
 
-  .hero-art-main {
-    inset: 0 2.9rem 0.8rem 0;
-  }
-
   .hero-art-main strong {
-    font-size: 1.2rem;
+    font-size: 1.08rem;
   }
 
   .hero-art-mini {
