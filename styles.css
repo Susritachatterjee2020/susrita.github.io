@@ -350,6 +350,12 @@ main {
   gap: 1.3rem;
 }
 
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
 .focus-section {
   position: relative;
 }
@@ -501,6 +507,25 @@ main {
   font-size: 0.97rem;
 }
 
+.award-card {
+  background:
+    linear-gradient(135deg, rgba(248, 255, 252, 0.98), rgba(241, 248, 245, 0.94)),
+    radial-gradient(circle at top right, rgba(226, 135, 67, 0.1), transparent 32%);
+}
+
+.award-card h3 {
+  margin: 0.45rem 0 0.4rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.28rem;
+}
+
+.award-issuer {
+  margin-bottom: 0.75rem;
+  color: var(--muted);
+  font-size: 0.94rem;
+  font-weight: 600;
+}
+
 .testimonial-card,
 .mentor-card {
   position: relative;
@@ -611,6 +636,7 @@ main {
   .hero,
   .story-section,
   .two-column,
+  .awards-grid,
   .testimonials-grid,
   .focus-grid,
   .experience-grid {
