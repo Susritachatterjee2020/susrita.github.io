@@ -298,6 +298,33 @@ main,
   font-size: 0.98rem;
 }
 
+.interest-list {
+  list-style: none;
+  margin-top: 0.85rem;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.interest-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.interest-list i {
+  width: 1.8rem;
+  height: 1.8rem;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(15, 118, 110, 0.12), rgba(226, 135, 67, 0.16));
+  color: var(--primary);
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
 main {
   padding-bottom: 3rem;
 }
