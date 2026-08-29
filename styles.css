@@ -38,7 +38,7 @@ body {
     linear-gradient(180deg, #edf5f1 0%, #eff6f3 48%, #f7faf8 100%);
   line-height: 1.6;
   overflow-x: hidden;
-  padding-top: 6.75rem;
+  padding-top: 6.2rem;
 }
 
 a {
@@ -154,12 +154,12 @@ main,
 }
 
 .hero {
-  margin: 1.2rem auto 0;
-  padding: 2.4rem 0 1rem;
+  margin: 0.4rem auto 0;
+  padding: 1.5rem 0 0.6rem;
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 1.8rem;
-  align-items: start;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1.35rem;
+  align-items: center;
   position: relative;
 }
 
@@ -169,97 +169,7 @@ main,
 }
 
 .hero-copy {
-  padding: 1.2rem 0.5rem 1.6rem 0;
-}
-
-.hero-art {
-  position: relative;
-  width: min(22rem, 100%);
-  height: 10.5rem;
-  margin-bottom: 1.1rem;
-}
-
-.hero-art-card {
-  position: absolute;
-  border-radius: 1.4rem;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  box-shadow: 0 16px 45px rgba(23, 52, 50, 0.12);
-  backdrop-filter: blur(14px);
-}
-
-.hero-art-main {
-  inset: 0 3.5rem 1rem 0;
-  padding: 1rem 1rem 0.9rem;
-  background:
-    linear-gradient(145deg, rgba(248, 255, 252, 0.96), rgba(236, 248, 244, 0.9)),
-    radial-gradient(circle at top right, rgba(226, 135, 67, 0.14), transparent 30%);
-}
-
-.hero-art-label {
-  display: inline-block;
-  font-size: 0.74rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--secondary);
-  font-weight: 800;
-}
-
-.hero-art-main strong {
-  display: block;
-  margin-top: 0.45rem;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.28rem;
-  font-weight: 700;
-}
-
-.hero-art-grid {
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.55rem;
-}
-
-.hero-art-grid span {
-  display: block;
-  height: 1.6rem;
-  border-radius: 0.65rem;
-  background: linear-gradient(135deg, rgba(15, 118, 110, 0.18), rgba(226, 135, 67, 0.2));
-}
-
-.hero-art-grid span:nth-child(2),
-.hero-art-grid span:nth-child(5) {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(15, 118, 110, 0.16));
-}
-
-.hero-art-mini {
-  width: 3.6rem;
-  height: 3.6rem;
-  display: grid;
-  place-items: center;
-  background: rgba(255, 255, 255, 0.82);
-  color: var(--primary);
-  font-size: 1.35rem;
-}
-
-.hero-art-mini-one {
-  top: 0.75rem;
-  right: 0.4rem;
-}
-
-.hero-art-mini-two {
-  bottom: 0;
-  right: 1.2rem;
-}
-
-.hero-art-line {
-  position: absolute;
-  right: 2.35rem;
-  top: 2.9rem;
-  width: 2.2rem;
-  height: 3.4rem;
-  border-top: 2px dashed rgba(15, 118, 110, 0.28);
-  border-right: 2px dashed rgba(15, 118, 110, 0.28);
-  border-top-right-radius: 1rem;
+  padding: 0.6rem 0.25rem 1rem 0;
 }
 
 .hero::after {
@@ -272,7 +182,6 @@ main,
   background: linear-gradient(90deg, rgba(15, 118, 110, 0.45), rgba(226, 135, 67, 0.18), transparent);
 }
 
-.eyebrow,
 .section-kicker,
 .panel-label,
 .timeline-date {
@@ -294,14 +203,14 @@ main,
 }
 
 .hero h1 {
-  max-width: 10.5ch;
+  max-width: 11.5ch;
   font-size: clamp(2.15rem, 4.8vw, 3.8rem);
-  margin-top: 0.9rem;
+  margin-top: 0.2rem;
 }
 
 .hero-text {
   max-width: 58ch;
-  margin-top: 1rem;
+  margin-top: 0.85rem;
   font-size: 1rem;
   color: var(--muted);
 }
@@ -310,7 +219,7 @@ main,
   display: flex;
   flex-wrap: wrap;
   gap: 0.9rem;
-  margin-top: 1.5rem;
+  margin-top: 1.15rem;
 }
 
 .btn {
@@ -354,17 +263,17 @@ main,
 
 .panel-card {
   border-radius: 2rem;
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
 
 .impact-stack {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 0.8rem;
 }
 
 .impact-stack div {
-  padding-top: 0.6rem;
+  padding-top: 0.45rem;
   border-top: 1px solid var(--line);
 }
 
@@ -376,7 +285,7 @@ main,
 .impact-stack strong {
   display: block;
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .impact-stack span {
@@ -390,15 +299,15 @@ main,
 }
 
 main {
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
 }
 
 .section {
-  margin: 3.2rem auto 0;
+  margin: 2.2rem auto 0;
 }
 
 .section-heading {
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.95rem;
 }
 
 .section h2 {
@@ -439,7 +348,7 @@ main {
 
 .card {
   border-radius: var(--radius-lg);
-  padding: 1.7rem;
+  padding: 1.45rem;
   transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
 }
 
@@ -458,8 +367,8 @@ main {
 .stack-list,
 .feature-list {
   display: grid;
-  gap: 1rem;
-  margin-top: 1.2rem;
+  gap: 0.85rem;
+  margin-top: 1rem;
 }
 
 .stack-item,
@@ -614,7 +523,7 @@ main {
 
 .contact-card {
   text-align: center;
-  padding: 2.2rem;
+  padding: 1.9rem;
   background:
     linear-gradient(135deg, rgba(248, 255, 252, 0.92), rgba(244, 249, 247, 0.96)),
     radial-gradient(circle at top right, rgba(226, 135, 67, 0.12), transparent 30%);
@@ -685,10 +594,6 @@ main {
     padding-right: 0;
   }
 
-  .hero-art {
-    width: min(20rem, 100%);
-  }
-
   .hero h1 {
     max-width: 12ch;
     font-size: clamp(1.95rem, 7vw, 2.9rem);
@@ -729,27 +634,13 @@ main {
   }
 
   .hero {
-    margin-top: 1.5rem;
-    padding-top: 1.4rem;
-  }
-
-  .hero-art {
-    height: 9.5rem;
-    margin-bottom: 1.1rem;
-  }
-
-  .hero-art-main strong {
-    font-size: 1.08rem;
-  }
-
-  .hero-art-mini {
-    width: 3.1rem;
-    height: 3.1rem;
+    margin-top: 0.9rem;
+    padding-top: 1rem;
   }
 
   .card,
   .panel-card {
-    padding: 1.35rem;
+    padding: 1.2rem;
   }
 
   .card-topline {
